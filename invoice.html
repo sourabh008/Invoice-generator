@@ -1,0 +1,53 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="invoice.css" />
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Invoice</h1>
+
+    </div><div id="container">
+    <div class="area">
+    <div class="leftarea">
+        <lable style="font-size:30px"><b>Invoice No.</b></lable><br>
+        <input type="text" id="invoiceno" class="input" placeholder="Enter invoice no."><br><br>
+        <lable><b>Invoice From</b></lable><br><br>
+        <input type="text" id="from" class="input1" placeholder="Who is this invoice from"><br><br>
+        <lable><b>To Bill</b></lable><br><br>
+        <input type="text" id="tobill" class="input1" placeholder="Who is this invoice to"><br><br>
+        <input type="text" id="description" class="input1" placeholder="Enter description">
+    </div><div class="rightarea">
+        <label><b>Date</b></label>
+        <input type="date" id="date1"><br><br>
+        <lable><b>Due Date</b></lable>
+        <input type="date" id="date2"><br><br>
+        <lable><b>Payment</b> </lable>
+        <input type="text"  class="input2" id="payment"><br><br>
+        <label><b>Tax:</b></label>
+        <input type="text" class="input2"id="tex"><br><br>
+       
+        <label><b>Balance Due</b></label>
+        <input type="text" class="input2" id="balance"><br><br>
+     
+
+    </div>
+</div>
+<div class="button">
+        <button id="button" onclick="submit()">Submit</button>
+    
+</div></div>
+
+<div id="new">
+    
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="print.js"></script>
+</body>
+</html>
